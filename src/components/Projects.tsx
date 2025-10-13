@@ -36,7 +36,7 @@ const projectsData = [
   description: "Um sistema ERP full-stack completo para gestão de óticas. O backend foi construído com Node.js, Express e Prisma, e o frontend com Next.js e Tailwind CSS. Inclui módulos de vendas, stock, clientes, ordens de serviço e dashboard com relatórios.",
   imageUrl: "/images/projects/erp-mind.png", // Imagem que você já tem no seu portfólio!
   tags: ["Next.js", "Node.js", "TypeScript", "Prisma", "Tailwind CSS", "Zustand"],
-  liveUrl: null, // Projeto local/privado
+  liveUrl: "#", // Projeto local/privado
   repoUrl: "https://github.com/wilkermartins/teste-erp",
   featured: false, // Ou true, se quiser destacá-lo
 },
