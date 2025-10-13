@@ -10,8 +10,8 @@ const projectsData = [
       "O site que você está vendo agora, construído com as tecnologias mais modernas para web. Design responsivo e animações fluidas.",
     imageUrl: "/images/projects/portfolio.png", // Caminho corrigido para a imagem
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    liveUrl: "#",
-    repoUrl: "https://github.com/wilkermartins/portfolio",
+    liveUrl: "https://portfolio-front-tau-flax.vercel.app/",
+    repoUrl: "https://github.com/WilkerGw/Portfolio-Wilker",
     featured: true,
   },
   {
@@ -21,9 +21,61 @@ const projectsData = [
     imageUrl: "/images/projects/vizz-loja-virtual.png",
     tags: ["NuvemShop"],
     liveUrl: "https://oticasvizz.lojavirtualnuvem.com.br/",
-    repoUrl: "https://oticasvizz.lojavirtualnuvem.com.br/",
     featured: false,
   },
+    {
+  title: "Site Institucional Óticas Vizz",
+  description: "Desenvolvimento do site institucional para uma ótica, utilizando Next.js para alta performance. O projeto inclui um chatbot com a IA Gemini do Google, sistema de agendamento de exames e um design moderno com animações em Framer Motion.",
+  imageUrl: "/images/projects/vizz-site.png", // Verifique se esta imagem existe no seu projeto de portfólio
+  tags: ["Next.js", "TypeScript", "Tailwind CSS", "Google Gemini", "Framer Motion"],
+  liveUrl: "https://www.oticasvizz.com.br/", // Substitua pela URL real
+  featured: false, // Ou false, dependendo da sua preferência
+},
+{
+  title: "Mind ERP - Sistema de Gestão para Óticas",
+  description: "Um sistema ERP full-stack completo para gestão de óticas. O backend foi construído com Node.js, Express e Prisma, e o frontend com Next.js e Tailwind CSS. Inclui módulos de vendas, stock, clientes, ordens de serviço e dashboard com relatórios.",
+  imageUrl: "/images/projects/erp-mind.png", // Imagem que você já tem no seu portfólio!
+  tags: ["Next.js", "Node.js", "TypeScript", "Prisma", "Tailwind CSS", "Zustand"],
+  liveUrl: null, // Projeto local/privado
+  repoUrl: "https://github.com/wilkermartins/teste-erp",
+  featured: false, // Ou true, se quiser destacá-lo
+},
+{
+  title: "Landing Page 'Nice Clothes'",
+  description: "Uma landing page visualmente atraente para uma marca de vestuário desportivo, focada na apresentação de produtos com animações modernas. Desenvolvida com Next.js, Tailwind CSS e Framer Motion para uma experiência de utilizador fluida e responsiva.",
+  imageUrl: "/images/projects/nice-clothes.png", // Esta imagem já existe no seu portfólio
+  tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  liveUrl: "URL_DO_SITE_NICE_CLOTHES", // Substitua pela URL real, se houver
+  repoUrl: "https://github.com/WilkerGw/Nice-Clothes",
+  featured: false, 
+},
+{
+  title: "Lading Page Loja Esportiva",
+  description: "Frontend de uma LP de loja esportiva construído com Next.js e TypeScript. O projeto utiliza CSS Modules para estilização e Context API para gestão do carrinho de compras. Inclui listagem de produtos por categoria, pesquisa e páginas de detalhe.",
+  imageUrl: "/images/projects/sneakers.png", // Esta imagem já existe no seu portfólio
+  tags: ["Next.js", "TypeScript", "CSS Modules", "React Context", "Docker"],
+  liveUrl: null, // Projeto local/privado
+  repoUrl: "https://github.com/WilkerGw/loja-de-tenis",
+  featured: false,
+},
+{
+  title: "Site para Imobiliária",
+  description: "Uma landing page elegante para uma imobiliária, construída com Next.js e CSS Modules. O projeto foca na experiência do utilizador com funcionalidades de pesquisa de imóveis, navegação inteligente com scroll spy e um design limpo e responsivo.",
+  imageUrl: "/images/projects/imobiliaria.png", // Esta imagem já existe no seu portfólio
+  tags: ["Next.js", "React", "JavaScript", "CSS Modules"],
+  liveUrl: null, // Projeto local/privado
+  repoUrl: "https://github.com/WilkerGw/Imobiliaria-site",
+  featured: false,
+},
+{
+  title: "Landing Page 'Espaço Integrado'",
+  description: "Uma landing page de página única para um centro de bem-estar. O projeto foi desenvolvido com Next.js e Framer Motion para criar uma experiência de navegação suave e apresentar os serviços e planos de forma clara e profissional.",
+  imageUrl: "/images/projects/espaco-terapia.png", // Crie uma imagem de prévia para este projeto
+  tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  liveUrl: "https://lp-espaco-integrado.vercel.app/", // Projeto local/privado
+  repoUrl: null,
+  featured: false,
+},
 ];
 
 const Projects = () => {
@@ -81,16 +133,18 @@ const Projects = () => {
                             </span>
                           ))}
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex flex-col lg:flex-row gap-4 text-center">
                           <a
                             href={project.liveUrl}
                             className="px-6 py-3 bg-gradient-to-r from-green-600 to-green-800 text-white font-bold rounded-xl hover:scale-105 transition-transform duration-300"
+                            target="_blank"
                           >
                             Ver Projeto
                           </a>
                           <a
                             href={project.repoUrl}
                             className="px-6 py-3 bg-white/10 text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300"
+                            target="_blank"
                           >
                             Código Fonte
                           </a>

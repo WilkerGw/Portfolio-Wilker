@@ -1,6 +1,7 @@
 // src/components/ProjectCard.tsx
 import React from "react";
 import Link from "next/link";
+import Image from "next/image"; // IMPORTADO
 import {
   FaHtml5,
   FaCss3Alt,
@@ -44,35 +45,22 @@ const iconMap: { [key: string]: React.ReactElement } = {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
+  imageUrl, // imageUrl agora está a ser recebida aqui
   tags,
   liveUrl,
   repoUrl,
 }) => {
   return (
     <div className="group relative bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25">
-      {/* Image Container */}
-      <div className="relative overflow-hidden">
-        <div className="aspect-video bg-gradient-to-br from-green-500/20 to-green-600/20 flex items-center justify-center">
-          <div className="text-white/50 text-center">
-            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-              <svg
-                className="w-8 h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
-            </div>
-            <p className="text-sm">Preview do Projeto</p>
-          </div>
-        </div>
-
+      {/* Image Container - CÓDIGO ATUALIZADO */}
+      <div className="relative aspect-video overflow-hidden">
+        <Image
+          src={imageUrl}
+          alt={`Imagem do projeto ${title}`}
+          layout="fill"
+          objectFit="contain"
+          className="group-hover:scale-105 transition-transform duration-300"
+        />
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
           <div className="flex gap-2">
