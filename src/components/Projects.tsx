@@ -54,7 +54,7 @@ const projectsData = [
   description: "Frontend de uma LP de loja esportiva construído com Next.js e TypeScript. O projeto utiliza CSS Modules para estilização e Context API para gestão do carrinho de compras. Inclui listagem de produtos por categoria, pesquisa e páginas de detalhe.",
   imageUrl: "/images/projects/sneakers.png", // Esta imagem já existe no seu portfólio
   tags: ["Next.js", "TypeScript", "CSS Modules", "React Context", "Docker"],
-  liveUrl: null, // Projeto local/privado
+  liveUrl: "#", // Projeto local/privado
   repoUrl: "https://github.com/WilkerGw/loja-de-tenis",
   featured: false,
 },
@@ -63,7 +63,7 @@ const projectsData = [
   description: "Uma landing page elegante para uma imobiliária, construída com Next.js e CSS Modules. O projeto foca na experiência do utilizador com funcionalidades de pesquisa de imóveis, navegação inteligente com scroll spy e um design limpo e responsivo.",
   imageUrl: "/images/projects/imobiliaria.png", // Esta imagem já existe no seu portfólio
   tags: ["Next.js", "React", "JavaScript", "CSS Modules"],
-  liveUrl: null, // Projeto local/privado
+  liveUrl:  "#", // Projeto local/privado
   repoUrl: "https://github.com/WilkerGw/Imobiliaria-site",
   featured: false,
 },
@@ -73,7 +73,7 @@ const projectsData = [
   imageUrl: "/images/projects/espaco-terapia.png", // Crie uma imagem de prévia para este projeto
   tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   liveUrl: "https://lp-espaco-integrado.vercel.app/", // Projeto local/privado
-  repoUrl: null,
+  repoUrl:  "#",
   featured: false,
 },
 ];
