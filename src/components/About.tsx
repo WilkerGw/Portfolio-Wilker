@@ -28,7 +28,7 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-green-800 mx-auto rounded-full"></div>
         </div>
             <Image
-              src="/images/logo-bege.png"
+              src="/images/logo.png"
               alt="Wilker Martins"
               width={450}
               height={450}
