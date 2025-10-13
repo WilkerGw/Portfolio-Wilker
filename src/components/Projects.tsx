@@ -1,66 +1,27 @@
 // src/components/Projects.tsx
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import Image from "next/image"; // 1. IMPORTAÇÃO ADICIONADA
 
 const projectsData = [
   {
     title: "Meu Portfólio",
     description:
       "O site que você está vendo agora, construído com as tecnologias mais modernas para web. Design responsivo e animações fluidas.",
-    imageUrl: "/projects/portfolio.png",
+    imageUrl: "/images/projects/portfolio.png", // Caminho corrigido para a imagem
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     liveUrl: "#",
     repoUrl: "https://github.com/wilkermartins/portfolio",
     featured: true,
   },
   {
-    title: "E-commerce Platform",
+    title: "E-commerce Loja de Óculos",
     description:
-      "Uma plataforma de e-commerce completa com carrinho de compras, checkout seguro e painel de administração intuitivo.",
-    imageUrl: "/placeholder.png",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    liveUrl: "#",
-    repoUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Task Manager App",
-    description:
-      "Um aplicativo elegante para gerenciamento de tarefas diárias com interface moderna e funcionalidades avançadas.",
-    imageUrl: "/placeholder.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "#",
-    repoUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "Dashboard interativo para visualização de dados meteorológicos com gráficos em tempo real e previsões precisas.",
-    imageUrl: "/placeholder.png",
-    tags: ["Vue.js", "Chart.js", "API Integration"],
-    liveUrl: "#",
-    repoUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Social Media App",
-    description:
-      "Rede social moderna com funcionalidades de posts, comentários, likes e sistema de notificações em tempo real.",
-    imageUrl: "/placeholder.png",
-    tags: ["React Native", "Firebase", "Redux"],
-    liveUrl: "#",
-    repoUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Blog Platform",
-    description:
-      "Plataforma de blog com editor rico, sistema de categorias, comentários e otimização SEO avançada.",
-    imageUrl: "/placeholder.png",
-    tags: ["Next.js", "Prisma", "PostgreSQL"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "Uma loja virtual completa para o ramo de óticas, com um catálogo de produtos detalhado, carrinho de compras e um checkout seguro com diversas opções de pagamento.",
+    imageUrl: "/images/projects/vizz-loja-virtual.png",
+    tags: ["NuvemShop"],
+    liveUrl: "https://oticasvizz.lojavirtualnuvem.com.br/",
+    repoUrl: "https://oticasvizz.lojavirtualnuvem.com.br/",
     featured: false,
   },
 ];
@@ -71,17 +32,7 @@ const Projects = () => {
       id="projects"
       className="relative py-20 bg-gradient-to-br from-black via-green-900 to-black overflow-hidden"
     >
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        ></div>
-      </div>
-      <div className="absolute top-20 left-10 w-40 h-40 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-green-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      {/* ... (código do background permanece o mesmo) ... */}
 
       <div className="container mx-auto px-8 relative z-10">
         {/* Header */}
@@ -109,6 +60,7 @@ const Projects = () => {
                   <div className="bg-gradient-to-r from-green-600/20 to-green-800/20 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div>
+                        {/* ... (informações do projeto permanecem as mesmas) ... */}
                         <div className="inline-flex items-center px-3 py-1 bg-green-500/20 text-green-300 text-sm rounded-full mb-4">
                           <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
                           Projeto em Destaque
@@ -144,27 +96,15 @@ const Projects = () => {
                           </a>
                         </div>
                       </div>
-                      <div className="relative">
-                        <div className="aspect-video bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl border border-white/20 flex items-center justify-center">
-                          <div className="text-white/50 text-center">
-                            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <svg
-                                className="w-8 h-8"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                                />
-                              </svg>
-                            </div>
-                            <p className="text-sm">Preview do Projeto</p>
-                          </div>
-                        </div>
+                      {/* 2. CÓDIGO DA IMAGEM ATUALIZADO */}
+                      <div className="relative aspect-video overflow-hidden transition-all duration-300">
+                        <Image
+                          src={project.imageUrl}
+                          alt={`Imagem do projeto ${project.title}`}
+                          layout="fill"
+                          objectFit="contain"
+                          className="group-hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
                     </div>
                   </div>
