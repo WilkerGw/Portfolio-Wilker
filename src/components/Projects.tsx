@@ -37,7 +37,7 @@ const projectsData = [
   imageUrl: "/images/projects/erp-mind.png", // Imagem que você já tem no seu portfólio!
   tags: ["Next.js", "Node.js", "TypeScript", "Prisma", "Tailwind CSS", "Zustand"],
   liveUrl: "#", // Projeto local/privado
-  repoUrl: "https://github.com/wilkermartins/teste-erp",
+  repoUrl: "#",
   featured: false, // Ou true, se quiser destacá-lo
 },
 {
@@ -45,7 +45,7 @@ const projectsData = [
   description: "Uma landing page visualmente atraente para uma marca de vestuário desportivo, focada na apresentação de produtos com animações modernas. Desenvolvida com Next.js, Tailwind CSS e Framer Motion para uma experiência de utilizador fluida e responsiva.",
   imageUrl: "/images/projects/nice-clothes.png", // Esta imagem já existe no seu portfólio
   tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  liveUrl: "URL_DO_SITE_NICE_CLOTHES", // Substitua pela URL real, se houver
+  liveUrl: "https://nice-clothes.vercel.app/", // Substitua pela URL real, se houver
   repoUrl: "https://github.com/WilkerGw/Nice-Clothes",
   featured: false, 
 },
@@ -54,7 +54,7 @@ const projectsData = [
   description: "Frontend de uma LP de loja esportiva construído com Next.js e TypeScript. O projeto utiliza CSS Modules para estilização e Context API para gestão do carrinho de compras. Inclui listagem de produtos por categoria, pesquisa e páginas de detalhe.",
   imageUrl: "/images/projects/sneakers.png", // Esta imagem já existe no seu portfólio
   tags: ["Next.js", "TypeScript", "CSS Modules", "React Context", "Docker"],
-  liveUrl: "#", // Projeto local/privado
+  liveUrl: "https://loja-de-tenis-525s.vercel.app/", // Projeto local/privado
   repoUrl: "https://github.com/WilkerGw/loja-de-tenis",
   featured: false,
 },
@@ -63,7 +63,7 @@ const projectsData = [
   description: "Uma landing page elegante para uma imobiliária, construída com Next.js e CSS Modules. O projeto foca na experiência do utilizador com funcionalidades de pesquisa de imóveis, navegação inteligente com scroll spy e um design limpo e responsivo.",
   imageUrl: "/images/projects/imobiliaria.png", // Esta imagem já existe no seu portfólio
   tags: ["Next.js", "React", "JavaScript", "CSS Modules"],
-  liveUrl:  "#", // Projeto local/privado
+  liveUrl:  "https://imobiliaria-site-seven.vercel.app/", // Projeto local/privado
   repoUrl: "https://github.com/WilkerGw/Imobiliaria-site",
   featured: false,
 },
