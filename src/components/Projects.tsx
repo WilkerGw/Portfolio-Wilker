@@ -76,6 +76,15 @@ const projectsData = [
   repoUrl:  "#",
   featured: false,
 },
+{
+  title: "Landing Page 'Aurum'",
+  description: "Uma landing page para o Aurum, uma plataforma de audiolearning, desenvolvida com as tecnologias mais modernas para criar uma experiência de usuário rápida e responsiva. O projeto apresenta a proposta de valor da plataforma, seus benefícios, conteúdos e planos de assinatura com o objetivo de converter visitantes em assinantes.",
+  imageUrl: "/images/projects/aurum.png", // Crie uma imagem de prévia para este projeto
+  tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  liveUrl: "https://lp-aurum.vercel.app/", // Projeto local/privado
+  repoUrl:  "https://github.com/WilkerGw/LP-Aurum",
+  featured: false,
+},
 ];
 
 const Projects = () => {
